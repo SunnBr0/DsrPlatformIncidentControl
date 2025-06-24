@@ -2,7 +2,8 @@
   font-family: 'Inter';
   font-style: normal;
   background: #161a1d;
-  height: 337px;
+  // height: 369px;
+  height: 10%;
   width: 100%;
   padding: 49px 42px 50px 43px;
   &__people {
@@ -59,6 +60,7 @@
   &__selected-time {
     display: flex;
     gap: 10px;
+    margin-bottom: 30px;
   }
   &__figure-calendar {
     margin: 0;

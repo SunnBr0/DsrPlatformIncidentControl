@@ -22,3 +22,4 @@ export const SegmentedControls: React.FC<SegmentedControlsProps> = ({ options = 
     </div>
   );
 };
+

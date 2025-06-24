@@ -1,0 +1,14 @@
+.metric-pie {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__value {
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
