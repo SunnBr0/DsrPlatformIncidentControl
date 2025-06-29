@@ -1,4 +1,4 @@
-import "../../../style/page/button-click/button-click.scss"
+import "./button-click.scss"
 type ButtonClickProps = {
   children: string;
 };

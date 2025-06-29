@@ -1,5 +1,5 @@
-import addMetric from "../../../../../../assets/addMetric.svg"
-import "../../../../../../style/page/user-profile/efficiency-metric/types-metrics/metric-add.scss"
+import addMetric from "../../../../../assets/addMetric.svg"
+import "./metric-add.scss"
 export const AddMetric = () =>{
     return(
         <article className="metric-add">

@@ -1,5 +1,5 @@
-import { MetricPie } from '../../../../util/metric-pie';
-import '../../../../../../style/page/user-profile/efficiency-metric/types-metrics/metric-task.scss';
+import { MetricPie } from '../../../util/metric-pie';
+import './metric-task.scss';
 
 export const MetricEfficiency = () => {
   return (

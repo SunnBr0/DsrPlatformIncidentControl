@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../style/page/segmented-controls/segmented-controls.scss';
+import './segmented-controls.scss';
 import { useId } from 'react';
 type SegmentedControlsProps = {
   options: string[];

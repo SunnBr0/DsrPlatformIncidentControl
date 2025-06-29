@@ -1,7 +1,5 @@
-import { Header } from './header/header';
-import { Aside } from './aside/aside';
-import '../../style/page/page.scss';
-import { UserProfile } from './user-profile/user-profile';
+import { Header,Aside ,UserProfile} from '../components';
+import './page.scss';
 export const Page = () => {
   return (
     <>

@@ -1,6 +1,6 @@
-import { MetricPie } from '../../../../util/metric-pie';
-import '../../../../../../style/page/user-profile/efficiency-metric/types-metrics/metric-notifications.scss';
-import { ButtonClick } from '../../../../util/button-click';
+import { MetricPie } from '../../../util/metric-pie';
+import './metric-notifications.scss';
+import { ButtonClick } from '../../../util/button-click';
 
 export const MetricNotification = () => {
   return (

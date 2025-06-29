@@ -1,8 +1,8 @@
 import { Profile } from './components/profile';
-import '../../../style/page/user-profile/user-profile.scss';
+import './user-profile.scss';
 import { SegmentedControls } from '../util/segmented-controls';
 import { ButtonCalendar } from '../util/button-calendar';
-import { Metrics } from './components/efficiency-metric/metrics';
+import { Metrics } from './components/types-metrics/metrics';
 
 export const UserProfile = () => {
   return (

@@ -1,4 +1,4 @@
-import '../../../style/page/aside/aside.scss';
+import './aside.scss';
 import user1 from '../../../assets/aside/user1.svg';
 import user2 from '../../../assets/aside/user2.svg';
 import help from '../../../assets/aside/help.svg';
