@@ -13,6 +13,6 @@ client.on('error', err => console.log('Redis Client Error', err));
 
 await client.connect();
 
-console.log(await client.get('vova')) 
+console.log(await client.get('Key')) 
 console.log(await client.get('foo')) 
 
