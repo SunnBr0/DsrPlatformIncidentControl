@@ -3,8 +3,11 @@ export const local = {
     title: 'Личный кабинет ИТР',
   },
   userProfile: {
-    segmentedControl:["Сегодня","Вчера"],
-    button:"Заступить на смену",
+    fullName: 'Иван Егорович Сергеев',
+    profession: 'Технолог',
+    placeWork: 'КВР-342',
+    segmentedControl: ['Сегодня', 'Вчера'],
+    button: 'Заступить на смену',
     metric: {
       add: {
         title: 'Добавить метрики эффективности',

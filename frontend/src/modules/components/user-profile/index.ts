@@ -1,6 +1,0 @@
-export * from "./components/profile"
-export * from "./components/types-metrics/metric-add"
-export * from "./components/types-metrics/metric-efficiency"
-export * from "./components/types-metrics/metric-notifications"
-export * from "./components/types-metrics/metric-task"
-export * from "./components/types-metrics/metrics"

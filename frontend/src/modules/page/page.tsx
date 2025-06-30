@@ -1,13 +1,7 @@
-import { Header,Aside ,UserProfile} from '../components';
-import './page.scss';
-export const Page = () => {
-  return (
-    <>
-      <Header />
-      <main className="main-section">
-        <Aside />
-        <UserProfile />
-      </main>
-    </>
-  );
-};
+import { PageTemplate } from "../templates/pageTemplate"
+
+export const Page = () =>{
+    return (
+        <PageTemplate/>
+    )
+} 

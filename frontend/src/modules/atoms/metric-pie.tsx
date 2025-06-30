@@ -1,5 +1,4 @@
 import { RadialBarChart, RadialBar, PolarAngleAxis } from 'recharts';
-import './metric-pie.scss';
 type TPropsPie = {
   completed: number;
   allTask: number;

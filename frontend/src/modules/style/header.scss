@@ -7,7 +7,7 @@
   background: #22272b;
   border-bottom: 1px solid #4e5255;
   &__title {
-    margin: 17.5px 0px 17.5px 24px;
+    margin: 17.5px auto 17.5px 24px;
     width: 582px;
     height: 25px;
     font-family: 'Inter';
@@ -23,11 +23,16 @@
       vertical-align: middle;
     }
   }
-  &__button {
+  &__segments {
     margin: 0 24px 0 0;
     width: 32px;
     img {
       vertical-align: middle;
     }
+  }
+  &__button {
+    padding: 0;
+    background: none;
+    border: none;
   }
 }

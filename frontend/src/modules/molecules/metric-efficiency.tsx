@@ -1,6 +1,5 @@
-import { MetricPie } from '../../../util/metric-pie';
-import './metric-efficiency.scss';
-import { local } from '../../../../lang/lang';
+import { MetricPie } from '../atoms/metric-pie';
+import { local } from '../lang/lang';
 
 export const MetricEfficiency = () => {
   return (
@@ -9,7 +8,10 @@ export const MetricEfficiency = () => {
         <h2 className="metric-efficiency__header">{local.userProfile.metric.efficiency.header}</h2>
         <MetricPie completed={78} allTask={100} typeValue="percent" />
       </div>
-      <p className="metric-efficiency__last-time">{local.userProfile.metric.efficiency.titleLastTime} {local.userProfile.metric.efficiency.lastTime}</p>
+      <p className="metric-efficiency__last-time">
+        {local.userProfile.metric.efficiency.titleLastTime}{' '}
+        {local.userProfile.metric.efficiency.lastTime}
+      </p>
     </article>
   );
 };

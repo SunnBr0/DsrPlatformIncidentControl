@@ -2,7 +2,6 @@
   display: flex;
   width: 60px;
   height: 1116px;
-//   height: 1856px;
   background: #22272b;
   margin: 0;
   border-right: 1px solid #4e5255;
@@ -32,5 +31,14 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+  &__button{
+    margin-top: auto;
+    border: 0;
+    background: none;
+  }
+  &__button-icon{
+    background: none;
+    border: 0;
   }
 }

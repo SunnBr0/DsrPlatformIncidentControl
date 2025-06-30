@@ -4,7 +4,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { Box } from '@mui/material';
 import { useState } from 'react';
-import calendar from '../../../assets/calendar.svg';
+import calendar from '../../assets/calendar.svg';
 export const ButtonCalendar = () => {
   const [value, setValue] = useState<Dayjs | null>(dayjs().startOf('day'));
   const [open, setOpen] = useState(false);
