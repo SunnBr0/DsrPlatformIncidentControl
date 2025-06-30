@@ -1,5 +1,5 @@
 import user1 from '../../../../assets/aside/user1.svg';
-
+import { local } from '../../../lang/lang';
 export const Profile = () => {
   return (
     <section className="profile__people">
@@ -10,7 +10,7 @@ export const Profile = () => {
         <h2>Иван Егорович Сергеев</h2>
         <p>Технолог КВР-342</p>
       </section>
-      <button className="profile__button">Заступить на смену</button>
+      <button className="profile__button">{local.userProfile.button}</button>
     </section>
   );
 };

@@ -1,14 +1,15 @@
 import { MetricPie } from '../../../util/metric-pie';
+import { local } from '../../../../lang/lang';
 import './metric-task.scss';
 
 export const MetricTask = () => {
   return (
     <article className="metric-task">
       <div className="metric-task__container">
-        <h2 className="metric-task__header">Количество заданий</h2>
+        <h2 className="metric-task__header">{local.userProfile.metric.task.header}</h2>
         <MetricPie completed={2} allTask={4} typeValue='part'/>
       </div>
-      <p className="metric-task__last-time">Последнее обновление в 12:42</p>
+      <p className="metric-task__last-time">{local.userProfile.metric.task.titleLastTime} {local.userProfile.metric.task.lastTime}</p>
     </article>
   );
 };
