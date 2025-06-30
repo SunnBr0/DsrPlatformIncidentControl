@@ -1,5 +1,5 @@
 export * from "./aside/aside"
-export * from "./header/header"
+export * from "../organisms/header"
 export * from "./user-profile/user-profile"
 export * from "./util/button-calendar"
 export * from "./util/button-click"
