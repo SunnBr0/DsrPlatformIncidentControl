@@ -1,8 +1,8 @@
 import { SelectedTime } from '../molecules/seletedTime';
-import { MetricTask } from '../molecules/metric-task';
-import { MetricNotification } from '../molecules/metric-notifications';
-import { MetricEfficiency } from '../molecules/metric-efficiency';
-import { AddMetric } from '../molecules/metric-add';
+import { MetricTask } from '../molecules/metricTask';
+import { MetricNotification } from '../molecules/metricNotifications';
+import { MetricEfficiency } from '../molecules/metricEfficiency';
+import { AddMetric } from '../molecules/metricAdd';
 import { ProfileInfo } from '../molecules/profileInfo';
 import { ButtonClick } from '../atoms/buttonClick';
 import { local } from '../lang/lang';

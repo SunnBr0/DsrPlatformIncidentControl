@@ -1,4 +1,4 @@
-import { MetricPie } from '../atoms/metric-pie';
+import { MetricPie } from '../atoms/metricPie';
 import { local } from '../lang/lang';
 
 export const MetricEfficiency = () => {

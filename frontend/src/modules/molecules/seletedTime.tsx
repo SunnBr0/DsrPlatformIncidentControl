@@ -1,4 +1,4 @@
-import { ButtonCalendar } from '../atoms/button-calendar';
+import { ButtonCalendar } from '../atoms/buttonCalendar';
 import { SegmentedControls } from '../atoms/segmented-controls';
 import { local } from '../lang/lang';
 

@@ -1,4 +1,4 @@
-import { MetricPie } from '../atoms/metric-pie';
+import { MetricPie } from '../atoms/metricPie';
 import { ButtonClick } from '../atoms/buttonClick';
 import { local } from '../lang/lang';
 

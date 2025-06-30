@@ -15,7 +15,7 @@ import '../style/aside.scss';
 import '../style/header.scss';
 import { Aside } from '../organisms/aside';
 import { Header } from '../organisms/header';
-import { UserProfile } from '../organisms/user-profile';
+import { UserProfile } from '../organisms/userProfile';
 
 export const PageTemplate = () => {
   return (
