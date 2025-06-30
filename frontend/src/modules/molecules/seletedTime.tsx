@@ -1,5 +1,5 @@
 import { ButtonCalendar } from '../atoms/buttonCalendar';
-import { SegmentedControls } from '../atoms/segmented-controls';
+import { SegmentedControls } from '../atoms/segmentedСontrols';
 import { local } from '../lang/lang';
 
 export const SelectedTime = () => {
