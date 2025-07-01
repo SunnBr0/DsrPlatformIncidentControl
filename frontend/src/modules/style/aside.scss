@@ -1,13 +1,14 @@
+@use './index' as *;
 .aside {
   display: flex;
-  width: 60px;
+  width: $aside-width;
   height: 1116px;
-  background: #22272b;
+  background: $aside-background;
   margin: 0;
-  border-right: 1px solid #4e5255;
+  border-right: $aside-border solid $aside-border-background;
   &__section {
     padding-top: 30px;
-    width: 60px;
+    width: $aside-width;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,20 +25,20 @@
     img {
       margin-top: 6px;
     }
-    width: 60px;
-    height: 60px;
-    border-top: 1px solid #4e5255;
+    width: $aside-help-width;
+    height: $aside-help-height;
+    border-top: $aside-border solid $aside-border-background;
     margin-top: auto;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
   }
-  &__button{
+  &__button {
     margin-top: auto;
     border: 0;
     background: none;
   }
-  &__button-icon{
+  &__button-icon {
     background: none;
     border: 0;
   }

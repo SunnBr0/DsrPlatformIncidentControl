@@ -1,21 +1,19 @@
+@use './index' as *;
+
 .button-click {
+  @include font-style-text($button-click-font-size, $button-click-font-weight);
   padding: 0px 16px;
-  height: 24px;
+  height: $button-click-height;
   border: none;
-  background: #0078d2;
-  border-radius: 99px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 24px;
-  color: #ffffff;
-  transition: background 0.3s;
+  background: $button-click-background;
+  border-radius: $button-click-border-radius;
+  line-height: $button-click-height;
+  transition: background $time-animation;
   &:hover {
-    background: #116db3;
+    background: $button-click-background-hover;
   }
   &:active {
-    background: #02508b;
+    background: $button-click-background-active;
   }
   &:focus {
     outline: none;

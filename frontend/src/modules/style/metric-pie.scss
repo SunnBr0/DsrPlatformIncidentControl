@@ -1,14 +1,18 @@
+@use './index' as *;
+
 .metric-pie {
-  width: 75px;
-  height: 75px;
+  width: $metric-pie-width;
+  height: $metric-pie-height;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   &__value {
     position: absolute;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
+    @include font-style-text(
+      $metric-pie-value-font-size,
+      $metric-pie-value-font-weight,
+      $metric-pie-value-color
+    );
   }
 }

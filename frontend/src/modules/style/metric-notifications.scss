@@ -1,43 +1,43 @@
+@use './index' as *;
 .metric-notifications {
-  background: #22272b;
-  width: 270px;
-  height: 140px;
+  background: $metric-background;
+  width: $metric-weight;
+  height: $metric-height;
   padding: 15px 15px 20px 20px;
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
+  border-radius: $metric-border-radius;
   &__container-graphics {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     margin-bottom: 21px;
   }
-  &__container{
+  &__container {
     display: flex;
     align-items: end;
-    // padding-right: 10px;
   }
   &__header {
     width: 133px;
     height: 20px;
     margin-top: 14px;
     margin-bottom: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fafafa;
+    line-height: $metric-header-line-height;
+    @include font-style-text(
+      $metric-header-font-size,
+      $metric-header-font-weight,
+      $metric-header-font-color
+    );
   }
   &__last-time {
     margin: 0;
     width: 176px;
     height: 45px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: rgba(255, 255, 255, 0.6);
+    line-height: $metric-title-line-height;
+    @include font-style-text(
+      $metric-title-font-size,
+      $metric-title-font-weight,
+      $metric-title-font-color
+    );
   }
 }

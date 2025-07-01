@@ -1,0 +1,97 @@
+$time-animation: 0.3s;
+$background: #22272b;
+$border-background: #4e5255;
+$metric-header-color: #fafafa;
+
+$header-height: 60px;
+$header-width: 100%;
+$header-border: 1px;
+$header-button-width: 32px;
+$header-font-size: 18px;
+$header-font-weight: 700;
+$header-background: $background;
+$header-border-background: $border-background;
+
+$aside-width: 60px;
+$aside-help-width: 60px;
+$aside-help-height: 60px;
+$aside-border: 1px;
+$aside-background: $background;
+$aside-border-background: $border-background;
+
+$button-click-font-size: 12px;
+$button-click-font-weight: 300;
+$button-click-height: 24px;
+$button-click-border-radius: 99px;
+$button-click-background: #0078d2;
+$button-click-background-hover: #116db3;
+$button-click-background-active: #02508b;
+
+$metrics-gap: 25px;
+
+$metric-add-background: #161a1d;
+$metric-add-height: 175px;
+$metric-add-weight: 305px;
+$metric-add-border: 1px;
+$metric-add-border-background: rgba(255, 255, 255, 0.2);
+
+$metric-add-font-size: 12px;
+$metric-add-font-weight: 300;
+$metric-add-button-border-radius: 99px;
+$metric-add-button-height: 24px;
+$metric-add-button-background: rgba(250, 250, 250, 0.16);
+$metric-add-button-color: rgba(255, 255, 255, 0.75);
+$metric-add-button-background-hover: rgba(250, 250, 250, 0.12);
+$metric-add-button-background-active: rgba(250, 250, 250, 0.068);
+$metric-add-font-color: $metric-header-color;
+
+$metric-pie-width: 75px;
+$metric-pie-height: 75px;
+$metric-pie-value-font-size: 14px;
+$metric-pie-value-font-weight: 600;
+$metric-pie-value-color: $metric-header-color;
+
+$metric-background: $background;
+$metric-height: 140px;
+$metric-weight: 270px;
+$metric-border-radius: 4px;
+$metric-header-font-color: $metric-header-color;
+$metric-header-font-size: 16px;
+$metric-header-font-weight: 500;
+$metric-header-line-height: 24px;
+$metric-title-font-size: 14px;
+$metric-title-font-weight: 400;
+$metric-title-font-color: rgba(255, 255, 255, 0.6);
+$metric-title-line-height: 21px;
+
+$user-profile-background: #161a1d;
+$user-profile-width: 100%;
+$user-profile-height: 10%;
+$user-profile-gap: 15px;
+$user-profile-button-font-size: 14px;
+$user-profile-button-font-weight: 300;
+$user-profile-button-font-color: #ffffff;
+$user-profile-button-height: 32px;
+$user-profile-button-border-radius: 4px;
+$user-profile-figure-width: 50px;
+$user-profile-figure-height: 50px;
+$user-profile-figure-calendar-width: 32px;
+$user-profile-figure-calendar-height: 32px;
+$user-profile-img-calendar-height: 24px;
+$user-profile-img-calendar-width: 24px;
+$user-profile-figure-calendar-background: #2e2e2e;
+$user-profile-figure-calendar-background-hover: #444;
+$user-profile-header-font-size: 24px;
+$user-profile-header-font-weight: 600;
+$user-profile-header-font-color: #fafafa;
+$user-profile-title-font-size: 16px;
+$user-profile-title-font-weight: 300;
+$user-profile-title-font-color: rgba(255, 255, 255, 0.6);
+
+@mixin font-style-text($font-size, $font-weight, $color: #ffffff) {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}

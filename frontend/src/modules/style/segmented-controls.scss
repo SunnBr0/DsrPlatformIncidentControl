@@ -1,10 +1,11 @@
+@use "./index" as *;
 .segmented-controls {
   display: flex;
   width: 176px;
   height: 30px;
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all $time-animation ease;
   background: #161a1d;
   border: 0.1px solid rgba(246, 251, 253, 0.28);
   border-radius: 100px;

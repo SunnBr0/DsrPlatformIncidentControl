@@ -1,60 +1,64 @@
+@use './index' as *;
 .profile {
+  background: $user-profile-background;
+  height: $user-profile-height;
+  width: $user-profile-width;
   font-family: 'Inter';
   font-style: normal;
-  background: #161a1d;
-  // height: 369px;
-  height: 10%;
-  width: 100%;
   padding: 49px 42px 50px 43px;
   &__people {
     display: flex;
-    gap: 15px;
+    gap: $user-profile-gap;
     margin-bottom: 48px;
   }
   &__button {
-    font-family: 'Inter';
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 32px;
-    color: #ffffff;
+    @include font-style-text(
+      $user-profile-button-font-size,
+      $user-profile-button-font-weight,
+      $user-profile-button-font-color
+    );
+    line-height: $user-profile-button-height;
+    height: $user-profile-button-height;
     padding: 0px 16px;
-    // width: 169px;
-    height: 32px;
-    background: #0078d2;
-    border-radius: 4px;
+    background: $button-click-background;
+    border-radius: $user-profile-button-border-radius;
     border: none;
-    transition: background 0.3s;
+    transition: background $time-animation;
     margin-left: auto;
   }
   &__button:hover {
-    background: #116db3;
+    background: $button-click-background-hover;
   }
   &__button:active {
-    background: #02508b;
+    background: $button-click-background-active;
   }
   &__figure {
     margin: 0px;
     img {
       margin-top: 2px;
-      width: 50px;
-      height: 50px;
+      width: $user-profile-figure-width;
+      height: $user-profile-figure-height;
     }
   }
   &__title {
     h2 {
-      margin: 0;
       margin-bottom: 5px;
-      font-weight: 600;
-      font-size: 24px;
+      margin: 0;
       line-height: 29px;
-      color: #fafafa;
+      @include font-style-text(
+        $user-profile-header-font-size,
+        $user-profile-header-font-weight,
+        $user-profile-header-font-color
+      );
     }
     p {
       margin: 0;
-      font-weight: 300;
-      font-size: 16px;
       line-height: 19px;
-      color: rgba(255, 255, 255, 0.6);
+      @include font-style-text(
+        $user-profile-title-font-size,
+        $user-profile-title-font-weight,
+        $user-profile-title-font-color
+      );
     }
   }
   &__selected-time {
@@ -64,20 +68,20 @@
   }
   &__figure-calendar {
     margin: 0;
-    width: 32px;
-    height: 32px;
-    background: #2e2e2e;
+    width: $user-profile-figure-calendar-width;
+    height: $user-profile-figure-calendar-height;
+    background: $user-profile-figure-calendar-background;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
+    transition: background $time-animation;
     img {
-      width: 24px;
-      height: 24px;
+      width: $user-profile-img-calendar-width;
+      height: $user-profile-img-calendar-height;
     }
   }
   &__figure-calendar:hover {
-    background: #444;
+    background: $user-profile-figure-calendar-background-hover;
   }
 }
