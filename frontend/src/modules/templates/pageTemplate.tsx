@@ -13,6 +13,7 @@ import '../style/user-profile.scss';
 import '../style/header.scss';
 import '../style/aside.scss';
 import '../style/header.scss';
+import '../style/modal.scss';
 import { Aside } from '../organisms/aside';
 import { Header } from '../organisms/header';
 import { UserProfile } from '../organisms/userProfile';

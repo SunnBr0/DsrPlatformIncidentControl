@@ -1,12 +1,9 @@
 import { SelectedTime } from '../molecules/seletedTime';
-import { MetricTask } from '../molecules/metricTask';
-import { MetricNotification } from '../molecules/metricNotifications';
-import { MetricEfficiency } from '../molecules/metricEfficiency';
-import { AddMetric } from '../molecules/metricAdd';
 import { ProfileInfo } from '../molecules/profileInfo';
 import { ButtonClick } from '../atoms/buttonClick';
 import { local } from '../lang/lang';
 import user1 from '../../assets/aside/user1.svg';
+import { Metrics } from './metrics';
 
 export const UserProfile = () => {
   return (
@@ -16,12 +13,7 @@ export const UserProfile = () => {
         <ButtonClick buttonClassName="profile__button">{local.userProfile.button}</ButtonClick>
       </section>
       <SelectedTime />
-      <section className="metrics">
-        <MetricTask />
-        <MetricNotification />
-        <MetricEfficiency />
-        <AddMetric />
-      </section>
+      <Metrics/>
     </section>
   );
 };
