@@ -2,7 +2,7 @@
 .aside {
   display: flex;
   width: $aside-width;
-  height: 1116px;
+  height: $aside-height;
   background: $aside-background;
   margin: 0;
   border-right: $aside-border solid $aside-border-background;
