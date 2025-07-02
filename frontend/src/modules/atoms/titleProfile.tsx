@@ -1,9 +1,15 @@
-import { local } from '../lang/lang';
-export const TitleProfile = () => {
+type TTitleProfile={
+  header:string,
+  className:string,
+  title:string,
+  placeWork:string,
+}
+
+export const TitleProfile = ({header,title,placeWork,className}:TTitleProfile) => {
   return (
-    <section className="profile__title">
-      <h2>{local.userProfile.fullName}</h2>
-      <p>{local.userProfile.profession} {local.userProfile.placeWork}</p>
+    <section className={className}>
+      <h2>{header}</h2>
+      <p>{title} {placeWork}</p>
     </section>
   );
 };

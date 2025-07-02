@@ -1,3 +1,5 @@
+import type { PropsWithChildren } from 'react';
+
 type TButtonIconProps = {
   buttonClassName: string;
   figureClassName: string;
@@ -10,9 +12,11 @@ export const ButtonIcon = ({
   figureClassName,
   src,
   alt = '',
-}: TButtonIconProps) => {
+  children,
+}: PropsWithChildren<TButtonIconProps>) => {
   return (
     <button className={buttonClassName}>
+      {children}
       <figure className={figureClassName}>
         <img src={src} alt={alt} />
       </figure>

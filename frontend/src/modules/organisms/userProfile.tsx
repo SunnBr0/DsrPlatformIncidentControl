@@ -1,9 +1,9 @@
-import { SelectedTime } from './seletedTime';
-import { ProfileInfo } from './profileInfo';
+import { SelectedTime } from '../molecules/seletedTime';
+import { ProfileInfo } from '../molecules/profileInfo';
 import { ButtonClick } from '../atoms/button/buttonClick';
 import { local } from '../lang/lang';
 import user1 from '../../assets/aside/user1.svg';
-import { Metrics } from '../organisms/metrics';
+import { Metrics } from './metrics';
 
 export const UserProfile = () => {
   return (

@@ -31,4 +31,10 @@ export const local = {
       },
     },
   },
+  analiticsWorkSpace:{
+    header:"Аналитика по рабочему пространству",
+    title:"Установка",
+    placeWork: 'КВР-342',
+    
+  }
 };

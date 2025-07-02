@@ -1,4 +1,4 @@
-import addMetric from '../../../assets/addMetric.svg';
+import addMetric from '../../../assets/main/userProfile/addMetric.svg';
 import { IconFigure } from '../../atoms/iconFigure';
 import { local } from '../../lang/lang';
 import { ButtonClick } from '../../atoms/button/buttonClick';

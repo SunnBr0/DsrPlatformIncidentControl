@@ -1,0 +1,12 @@
+@use './index' as *;
+.analitics-work-space {
+  background: $background;
+  height: $analitics-work-space-height;
+  padding: 50px 42px 0 42px;
+  &__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+

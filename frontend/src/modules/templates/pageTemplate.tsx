@@ -16,6 +16,8 @@ import '../style/header.scss';
 import '../style/modal.scss';
 import '../style/metricModal.scss';
 import '../style/personalBusiness.scss';
+import '../style/analiticsWorkSpace.scss';
+import '../style/control-buttons.scss';
 import { Aside } from '../organisms/aside';
 import { Header } from '../organisms/header';
 import { PersonalBusiness } from '../organisms/personalBusiness';

@@ -89,6 +89,8 @@ $user-profile-title-font-size: 16px;
 $user-profile-title-font-weight: 300;
 $user-profile-title-font-color: rgba(255, 255, 255, 0.6);
 
+$analitics-work-space-height: 1054px;
+
 @mixin font-style-text($font-size, $font-weight, $color: #ffffff) {
   font-family: 'Inter';
   font-style: normal;

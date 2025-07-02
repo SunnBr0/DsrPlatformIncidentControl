@@ -1,0 +1,86 @@
+@use './index' as *;
+$bg: rgba(250, 250, 250, 0.16);
+$border-rad: 4px;
+$button-small-height: 32px;
+$button-small-width: 32px;
+$button-text-color: rgba(255, 255, 255, 0.75);
+$button-font-size: 14px;
+$button-font-weight: 300;
+.control-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 32px;
+  &__setting {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-self: center;
+    gap: 11px;
+    background: $bg;
+    border-radius: $border-rad;
+    border: none;
+    height: $button-small-height;
+    line-height: 32px;
+    @include font-style-text($button-font-size, $button-font-weight, $button-text-color);
+    padding: 10px 16px 10px 12px;
+    transition: background $time-animation;
+    &__figure {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      margin: 0;
+    }
+    &:hover {
+      background: $metric-add-button-background-hover;
+    }
+    &:active {
+      background: $metric-add-button-background-active;
+    }
+  }
+  &__parameters {
+    background: $bg;
+    border-radius: $border-rad;
+    border: none;
+    width: $button-small-width;
+    height: $button-small-height;
+    padding: 0;
+    transition: background $time-animation;
+
+    &__figure {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      margin: 0;
+    }
+    &:hover {
+      background: $metric-add-button-background-hover;
+    }
+    &:active {
+      background: $metric-add-button-background-active;
+    }
+  }
+  &__move-window {
+    background: $bg;
+    border-radius: $border-rad;
+    border: none;
+    width: $button-small-width;
+    height: $button-small-height;
+    padding: 0;
+    transition: background $time-animation;
+
+    &__figure {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      margin: 0;
+    }
+    &:hover {
+      background: $metric-add-button-background-hover;
+    }
+    &:active {
+      background: $metric-add-button-background-active;
+    }
+  }
+}
