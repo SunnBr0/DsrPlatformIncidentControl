@@ -1,21 +1,11 @@
 @use './index' as *;
-.metric-notifications {
-  background: $metric-background;
-  width: $metric-weight;
-  height: $metric-height;
-  padding: 15px 15px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  border-radius: $metric-border-radius;
-  &__container-graphics {
+.metric-efficiency {
+  @include metric-style;
+  &__container {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     margin-bottom: 21px;
-  }
-  &__container {
-    display: flex;
-    align-items: end;
   }
   &__header {
     width: 133px;
@@ -31,7 +21,7 @@
   }
   &__last-time {
     margin: 0;
-    width: 176px;
+    width: 168px;
     height: 45px;
     line-height: $metric-title-line-height;
     @include font-style-text(

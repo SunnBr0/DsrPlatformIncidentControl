@@ -1,5 +1,5 @@
-import { MetricPie } from '../atoms/metricPie';
-import { local } from '../lang/lang';
+import { MetricPie } from '../../atoms/metricPie';
+import { local } from '../../lang/lang';
 type TMetricEfficiency = {
   completed: number;
   allTask: number;

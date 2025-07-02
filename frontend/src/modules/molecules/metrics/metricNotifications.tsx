@@ -1,6 +1,6 @@
-import { MetricPie } from '../atoms/metricPie';
-import { ButtonClick } from '../atoms/buttonClick';
-import { local } from '../lang/lang';
+import { MetricPie } from '../../atoms/metricPie';
+import { ButtonClick } from '../../atoms/button/buttonClick';
+import { local } from '../../lang/lang';
 type TMetricNotification = {
   completed: number;
   allTask: number;

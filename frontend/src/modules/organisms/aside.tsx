@@ -1,4 +1,4 @@
-import { ButtonIcon } from '../atoms/buttonIcon';
+import { ButtonIcon } from '../atoms/button/buttonIcon';
 import { AsideIconSection } from '../molecules/asideIconSection';
 import user1 from '../../assets/aside/user1.svg';
 import user2 from '../../assets/aside/user2.svg';

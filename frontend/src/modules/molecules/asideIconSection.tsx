@@ -1,12 +1,12 @@
-import { ButtonIcon } from '../atoms/buttonIcon';
+import { ButtonIcon } from '../atoms/button/buttonIcon';
 type TAsideIconSection = {
   icons: string[];
 };
 export const AsideIconSection = ({ icons }: TAsideIconSection) => {
   return (
     <>
-      {icons.map((item) => (
-        <ButtonIcon buttonClassName="aside__button-icon" figureClassName="aside__icon" src={item} />
+      {icons.map((item,index) => (
+        <ButtonIcon key={`${item}-${index}`} buttonClassName="aside__button-icon" figureClassName="aside__icon" src={item} />
       ))}
     </>
   );

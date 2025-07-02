@@ -1,7 +1,7 @@
-import addMetric from '../../assets/addMetric.svg';
-import { IconFigure } from '../atoms/iconFigure';
-import { local } from '../lang/lang';
-import { ButtonClick } from '../atoms/buttonClick';
+import addMetric from '../../../assets/addMetric.svg';
+import { IconFigure } from '../../atoms/iconFigure';
+import { local } from '../../lang/lang';
+import { ButtonClick } from '../../atoms/button/buttonClick';
 
 type TAddMetric ={
   onClick:()=>void;

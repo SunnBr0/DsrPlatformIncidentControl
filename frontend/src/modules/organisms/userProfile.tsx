@@ -1,6 +1,6 @@
 import { SelectedTime } from '../molecules/seletedTime';
 import { ProfileInfo } from '../molecules/profileInfo';
-import { ButtonClick } from '../atoms/buttonClick';
+import { ButtonClick } from '../atoms/button/buttonClick';
 import { local } from '../lang/lang';
 import user1 from '../../assets/aside/user1.svg';
 import { Metrics } from './metrics';

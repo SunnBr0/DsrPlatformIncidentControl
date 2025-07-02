@@ -1,0 +1,56 @@
+@use './index' as *;
+.metric-modal {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: $metrics-gap;
+  margin-bottom: 3px;
+  &__item {
+    background: $metric-background;
+    width: $metric-weight + 35px;
+    height: $metric-height + 35px;
+    padding: 15px 15px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: $metric-border-radius;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: background $time-animation;
+    &:hover {
+      background: $metric-add-button-background;
+    }
+    &:active {
+      background: $metric-add-button-background-hover;
+    }
+    &--close {
+      background: $metric-add-background;
+      width: $metric-weight + 35px;
+      height: $metric-height + 35px;
+      padding: 15px 15px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: $metric-border-radius;
+      justify-content: center;
+      align-items: center;
+      border: $metric-add-border solid $metric-add-border-background;
+      transition: background $time-animation;
+      &:hover {
+        background: $metric-add-button-background;
+      }
+      &:active {
+        background: $metric-add-button-background-hover;
+      }
+    }
+  }
+  &__header {
+    // height: 20px;
+    line-height: $metric-header-line-height + 20;
+    @include font-style-text(
+      $metric-header-font-size + 10,
+      $metric-header-font-weight,
+      $metric-header-font-color
+    );
+  }
+}

@@ -1,4 +1,4 @@
-import { ButtonIcon } from '../atoms/buttonIcon';
+import { ButtonIcon } from '../atoms/button/buttonIcon';
 import { local } from '../lang/lang';
 import notification from '../../assets/header/notification.svg';
 import button from '../../assets/header/Button.svg';

@@ -40,8 +40,8 @@ $metric-add-font-size: 12px;
 $metric-add-font-weight: 300;
 $metric-add-button-border-radius: 99px;
 $metric-add-button-height: 24px;
-$metric-add-button-background: rgba(250, 250, 250, 0.16);
 $metric-add-button-color: rgba(255, 255, 255, 0.75);
+$metric-add-button-background: rgba(250, 250, 250, 0.16);
 $metric-add-button-background-hover: rgba(250, 250, 250, 0.12);
 $metric-add-button-background-active: rgba(250, 250, 250, 0.068);
 $metric-add-font-color: $metric-header-color;
@@ -95,4 +95,14 @@ $user-profile-title-font-color: rgba(255, 255, 255, 0.6);
   font-weight: $font-weight;
   font-size: $font-size;
   color: $color;
+}
+
+@mixin metric-style {
+  background: $metric-background;
+  width: $metric-weight;
+  height: $metric-height;
+  padding: 15px 15px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: $metric-border-radius;
 }
