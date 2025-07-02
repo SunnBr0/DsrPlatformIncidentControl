@@ -15,9 +15,10 @@ import '../style/aside.scss';
 import '../style/header.scss';
 import '../style/modal.scss';
 import '../style/metricModal.scss';
+import '../style/personalBusiness.scss';
 import { Aside } from '../organisms/aside';
 import { Header } from '../organisms/header';
-import { UserProfile } from '../organisms/userProfile';
+import { PersonalBusiness } from '../organisms/personalBusiness';
 
 export const PageTemplate = () => {
   return (
@@ -25,7 +26,7 @@ export const PageTemplate = () => {
       <Header />
       <main className="main-section">
         <Aside />
-        <UserProfile />
+        <PersonalBusiness />
       </main>
     </>
   );
