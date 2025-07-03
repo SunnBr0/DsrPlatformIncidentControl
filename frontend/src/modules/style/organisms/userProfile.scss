@@ -1,4 +1,4 @@
-@use './index' as *;
+@use '../index' as *;
 .profile {
   background: $user-profile-background;
   height: $user-profile-height;
@@ -41,8 +41,7 @@
   }
   &__title {
     h2 {
-      margin-bottom: 5px;
-      margin: 0;
+      margin: 0 0 5px 0;
       line-height: 29px;
       @include font-style-text(
         $user-profile-header-font-size,
@@ -52,7 +51,7 @@
     }
     p {
       margin: 0;
-      line-height: 19px;
+      line-height: 20px;
       @include font-style-text(
         $user-profile-title-font-size,
         $user-profile-title-font-weight,

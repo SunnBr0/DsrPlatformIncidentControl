@@ -1,0 +1,36 @@
+@use '../index.scss' as *;
+$count-incidents-height: 415px;
+$count-incidents-width: 415px;
+.count-incidents {
+  height: $count-incidents-height;
+  width: $count-incidents-width;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  &__description {
+    padding: 20px 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+  }
+  &__header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 33px;
+    h2 {
+      margin: 0;
+      line-height: 24px;
+      @include font-style-text(
+        $metric-header-font-size,
+        $metric-header-font-weight,
+        $metric-header-font-color
+      );
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,4 +1,4 @@
-import { MetricPie } from '../../atoms/metricPie';
+import { MetricPie } from '../../atoms/graphs/metricPie';
 import { local } from '../../lang/lang';
 type TMetricEfficiency = {
   completed: number;

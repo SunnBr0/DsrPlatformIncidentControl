@@ -1,15 +1,11 @@
-@use './index' as *;
-.metric-notifications {
+@use '../index' as *;
+.metric-task {
   @include metric-style;
-  &__container-graphics {
+  &__container {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     margin-bottom: 21px;
-  }
-  &__container {
-    display: flex;
-    align-items: end;
   }
   &__header {
     width: 133px;
@@ -25,7 +21,7 @@
   }
   &__last-time {
     margin: 0;
-    width: 176px;
+    width: 174px;
     height: 45px;
     line-height: $metric-title-line-height;
     @include font-style-text(

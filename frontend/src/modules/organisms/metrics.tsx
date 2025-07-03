@@ -24,7 +24,7 @@ export const Metrics = () => {
           {metrics.map((item) => mapMetrics.get(item)?.component)}
           <AddMetric onClick={() => setIsOpen(true)} />
         </section>
-      )}
+      )}  
       <Modal isOpen={isOpen}>
         <section className="metric-modal">
           {Array.from(mapMetrics.entries()).map(([type, item]) => (

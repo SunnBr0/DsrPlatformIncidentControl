@@ -35,6 +35,14 @@ export const local = {
     header:"Аналитика по рабочему пространству",
     title:"Установка",
     placeWork: 'КВР-342',
-    
+    widgets:{
+      countIncidents:{
+        header: 'Количество инцидентов ',
+        segmentedControls:['День', 'Неделя',"Месяц"],
+        button:"Подробнее",
+        legends:["Закрытые","Активные","Новые"],
+        pie:"Всего"
+      }
+    }
   }
 };

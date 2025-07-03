@@ -1,0 +1,24 @@
+@use '../index' as *;
+
+.segmented-controls {
+  @include style-segmented-controls(
+    $segmented-controls-user-profile-weight,
+    $segmented-controls-user-profile-height,
+    $segmented-controls-user-profile-font-size,
+    $segmented-controls-font-weight,
+    $segmented-controls-font-color,
+    $segmented-controls-color-target
+  );
+  &__widgets {
+    &--count-incidents {
+      @include style-segmented-controls(
+        $segmented-controls-count-incidents-weight,
+        $segmented-controls-count-incidents-height,
+        $segmented-controls-count-incidents-font-size,
+        $segmented-controls-font-weight,
+        $segmented-controls-font-color,
+        $segmented-controls-color-target
+      );
+    }
+  }
+}

@@ -91,6 +91,18 @@ $user-profile-title-font-color: rgba(255, 255, 255, 0.6);
 
 $analitics-work-space-height: 1054px;
 
+$segmented-controls-user-profile-weight: 176px;
+$segmented-controls-user-profile-height: 30px;
+$segmented-controls-user-profile-font-size: 14px;
+
+$segmented-controls-count-incidents-weight: 198px;
+$segmented-controls-count-incidents-height: 24px;
+$segmented-controls-count-incidents-font-size: 12px;
+
+$segmented-controls-font-weight: 300;
+$segmented-controls-font-color: rgba(255, 255, 255, 0.8);
+$segmented-controls-color-target: #ffffff;
+
 @mixin font-style-text($font-size, $font-weight, $color: #ffffff) {
   font-family: 'Inter';
   font-style: normal;
@@ -107,4 +119,122 @@ $analitics-work-space-height: 1054px;
   display: flex;
   flex-direction: column;
   border-radius: $metric-border-radius;
+}
+
+@mixin style-segmented-controls(
+  $width,
+  $height,
+  $segmented-controls-font-size,
+  $segmented-controls-font-weight,
+  $font-color,
+  $color-target
+) {
+  display: flex;
+  width: $width;
+  height: $height;
+  position: relative;
+  overflow: hidden;
+  transition: all $time-animation ease;
+  border: 0.1px solid rgba(246, 251, 253, 0.28);
+  border-radius: 100px;
+  box-sizing: border-box;
+  /*
+   * Vissualy hidden radiobuttons
+   */
+  input {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+  }
+  /* 
+ * Labels need to be the same size
+ */
+  label {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 0px;
+    position: relative;
+    z-index: 2;
+    transition: inherit;
+
+    /*
+ * Labels 
+ */
+    @include font-style-text(
+      $segmented-controls-font-size,
+      $segmented-controls-font-weight,
+      $font-color
+    );
+  }
+  input:checked + label {
+    color: $color-target;
+  }
+  /* 
+ * Adjust z-index of last label since that contains 
+ * the paddle that needs to go beneath all other labels 
+ */
+  label:last-of-type {
+    z-index: 1;
+  }
+  /*
+ * Paddle 
+ */
+  label:last-of-type::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: black;
+    transition: inherit;
+  }
+  /*
+ * Move paddle depending on which option is selected
+ * (Manually expanded for up to 5 options)
+ */
+  input:nth-last-of-type(2):checked ~ label:last-of-type::after {
+    transform: translateX(-100%);
+  }
+  input:nth-last-of-type(3):checked ~ label:last-of-type::after {
+    transform: translateX(-200%);
+  }
+  /*
+ * Container
+ */
+  /*
+ * Dividers
+ */
+  label:not(:first-of-type)::before {
+    content: '';
+    position: absolute;
+    z-index: -3;
+    top: 0.5rem;
+    left: 0;
+    bottom: 0.5rem;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    transition: inherit;
+  }
+  input:checked + label::before,
+  input:checked + label + input + label::before {
+    opacity: 0;
+  }
+  label:last-of-type::after {
+    background: #0078d2;
+    border-radius: 100px;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow:
+      0px 3px 1px rgba(0, 0, 0, 0.04),
+      0px 3px 8px rgba(0, 0, 0, 0.12);
+  }
 }

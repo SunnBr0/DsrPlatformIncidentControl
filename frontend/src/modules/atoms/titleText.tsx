@@ -1,11 +1,11 @@
-type TTitleProfile={
+type TTitleText={
   header:string,
   className:string,
   title:string,
-  placeWork:string,
+  placeWork?:string,
 }
 
-export const TitleProfile = ({header,title,placeWork,className}:TTitleProfile) => {
+export const TitleText = ({header,title,placeWork,className}:TTitleText) => {
   return (
     <section className={className}>
       <h2>{header}</h2>

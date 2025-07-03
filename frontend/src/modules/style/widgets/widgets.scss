@@ -1,0 +1,8 @@
+@use '../index.scss' as *;
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: $metrics-gap;
+  
+}

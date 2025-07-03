@@ -1,4 +1,4 @@
-import { MetricPie } from '../../atoms/metricPie';
+import { MetricPie } from '../../atoms/graphs/metricPie';
 import { ButtonClick } from '../../atoms/button/buttonClick';
 import { local } from '../../lang/lang';
 type TMetricNotification = {

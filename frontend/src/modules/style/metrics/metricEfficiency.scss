@@ -1,5 +1,5 @@
-@use './index' as *;
-.metric-task {
+@use '../index' as *;
+.metric-efficiency {
   @include metric-style;
   &__container {
     justify-content: space-between;
@@ -21,7 +21,7 @@
   }
   &__last-time {
     margin: 0;
-    width: 174px;
+    width: 168px;
     height: 45px;
     line-height: $metric-title-line-height;
     @include font-style-text(
