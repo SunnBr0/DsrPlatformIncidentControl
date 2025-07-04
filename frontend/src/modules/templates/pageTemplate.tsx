@@ -20,6 +20,7 @@ import '../style/organisms/analiticsWorkSpace.scss';
 import '../style/modal/modal.scss';
 import '../style/modal/metricModal.scss';
 import '../style/widgets/countIncidents.scss';
+import '../style/widgets/indicatorKPI.scss';
 import '../style/widgets/widgets.scss';
 import { Aside } from '../organisms/aside';
 import { Header } from '../organisms/header';

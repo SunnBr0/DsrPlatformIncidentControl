@@ -21,7 +21,7 @@ export const CountIncidents = () => {
             className="segmented-controls__widgets--count-incidents"
             options={local.analiticsWorkSpace.widgets.countIncidents.segmentedControls}
           />
-          <ButtonClick>Подробнее</ButtonClick>
+          <ButtonClick>{local.analiticsWorkSpace.widgets.countIncidents.button}</ButtonClick>
         </section>
       </section>
       <section className='count-incidents__content'>

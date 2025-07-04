@@ -1,6 +1,6 @@
 @use '../index.scss' as *;
 
-.count-incidents {
+.indicator-kpi {
   @include widget-style;
   &__description {
     @include widget-style-description;
@@ -9,14 +9,22 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
     h2 {
-      margin: 0;
+      margin: 0 0 5px 0;
       line-height: 24px;
       @include font-style-text(
         $metric-header-font-size,
         $metric-header-font-weight,
         $metric-header-font-color
+      );
+    }
+    p {
+      margin: 0;
+      @include font-style-text(
+        $widget-title-font-size,
+        $widget-title-font-weight,
+        $widget-font-color
       );
     }
   }

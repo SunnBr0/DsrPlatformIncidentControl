@@ -37,7 +37,6 @@ export const WidgetPie = () => {
             {data.map((_, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index]} />
             ))}
-            {/* {renderCenterText()} */}
           </Pie>
           <Legend
             layout="vertical"
@@ -45,7 +44,7 @@ export const WidgetPie = () => {
             align="right"
             iconType="circle"
             iconSize={10}
-            wrapperStyle={{marginTop:"0px"}}
+            wrapperStyle={{ marginTop: '-10px' }}
             formatter={(value) => <span className="widget-pie__legend">{value}</span>}
           />
         </PieChart>

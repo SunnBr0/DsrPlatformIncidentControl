@@ -1,5 +1,6 @@
 $time-animation: 0.3s;
 $background: #22272b;
+
 $border-background: #4e5255;
 $metric-header-color: #fafafa;
 
@@ -103,6 +104,11 @@ $segmented-controls-font-weight: 300;
 $segmented-controls-font-color: rgba(255, 255, 255, 0.8);
 $segmented-controls-color-target: #ffffff;
 
+$widget-height: 415px;
+$widget-width: 415px;
+$widget-title-font-size: 14px;
+$widget-title-font-weight: 300;
+$widget-font-color: rgba(255, 255, 255, 0.6);
 @mixin font-style-text($font-size, $font-weight, $color: #ffffff) {
   font-family: 'Inter';
   font-style: normal;
@@ -119,6 +125,21 @@ $segmented-controls-color-target: #ffffff;
   display: flex;
   flex-direction: column;
   border-radius: $metric-border-radius;
+}
+
+@mixin widget-style {
+  height: $widget-height;
+  width: $widget-width;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+@mixin widget-style-description {
+  height: 124px;
+  padding: 20px 20px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
 }
 
 @mixin style-segmented-controls(
