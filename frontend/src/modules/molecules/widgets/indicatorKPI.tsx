@@ -3,7 +3,8 @@ import { TitleText } from '../../atoms/titleText';
 import { local } from '../../lang/lang';
 import IconDraggable from '../../../assets/main/analiticsWorkSpace/IconDraggable.svg';
 import { ButtonClick } from '../../atoms/button/buttonClick';
-import { WidgetPie } from '../../atoms/graphs/widgetPie';
+import { CustomDateRangePicker} from '../../atoms/button/dateRangePicker';
+import { WidgetLineChart } from '../../atoms/graphs/widgetLineChart';
 
 export const IndicatorKPI = () => {
   return (
@@ -22,11 +23,12 @@ export const IndicatorKPI = () => {
           ></ButtonIcon>
         </section>
         <section className="indicator-kpi__buttons">
+          <CustomDateRangePicker/>
           <ButtonClick>{local.analiticsWorkSpace.widgets.countIncidents.button}</ButtonClick>
         </section>
       </section>
       <section className="indicator-kpi__content">
-        <WidgetPie />
+        <WidgetLineChart/>
       </section>
     </article>
   );

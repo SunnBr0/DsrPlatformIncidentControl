@@ -44,7 +44,7 @@ export const local = {
         pie: 'Всего',
       },
       indicatorKPI: {
-        header: 'Количество инцидентов ',
+        header: 'Показатель КПЭ',
         title: 'Общее',
         button: 'Подробнее',
       },

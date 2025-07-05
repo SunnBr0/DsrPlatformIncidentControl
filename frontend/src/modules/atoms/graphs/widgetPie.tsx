@@ -3,8 +3,8 @@ import { TitleText } from '../titleText';
 import { local } from '../../lang/lang';
 
 const data = [
-  { name: 'Активные', value: 5 },
-  { name: 'Закрытые', value: 10 },
+  { name: 'Активные', value: 10 },
+  { name: 'Закрытые', value: 5 },
   { name: 'Новые', value: 5 },
 ];
 
