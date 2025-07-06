@@ -2,15 +2,26 @@ import { useState } from 'react';
 import { Box, IconButton, InputAdornment } from '@mui/material';
 import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import dayjs, { Dayjs } from 'dayjs';
+// import dayjs, { Dayjs } from 'dayjs';
 
 import CalendarIcon from '../../../assets/main/analiticsWorkSpace/IconCalendar.svg';
 import CloseIcon from '../../../assets/main/analiticsWorkSpace/IconClose.svg';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
+import { setEndDate, setStartDate } from '../../features/dateRange/dateRangeSlice';
+import { selectEndDate, selectStartDate } from '../../features/dateRange/dateRangeSelectors';
+export const DateRangePicker = () => {
+  // const [startDate, setStartDate] = useState<Dayjs | null>(dayjs('2025-01-01'));
+  // const [endDate, setEndDate] = useState<Dayjs | null>(dayjs('2025-07-05'));
+  const dispatch = useAppDispatch();
 
-export const CustomDateRangePicker = () => {
-  const [startDate, setStartDate] = useState<Dayjs | null>(dayjs('2025-01-01'));
-  const [endDate, setEndDate] = useState<Dayjs | null>(dayjs('2025-07-05'));
-
+  // const startDate = useAppSelector((state) =>
+  //   state.dateRange.startDate ? dayjs(state.dateRange.startDate) : null,
+  // );
+  // const endDate = useAppSelector((state) =>
+  //   state.dateRange.endDate ? dayjs(state.dateRange.endDate) : null,
+  // );
+  const startDate = useAppSelector(selectStartDate);
+  const endDate = useAppSelector(selectEndDate);
   const [openStart, setOpenStart] = useState(false);
   const [openEnd, setOpenEnd] = useState(false);
 
@@ -45,7 +56,9 @@ export const CustomDateRangePicker = () => {
         <DatePicker
           value={startDate}
           onChange={(newValue) => {
-            setStartDate(newValue);
+            // setStartDate(newValue);
+            // setOpenStart(false);
+            dispatch(setStartDate(newValue ? newValue.toISOString() : null));
             setOpenStart(false);
           }}
           sx={{
@@ -66,7 +79,7 @@ export const CustomDateRangePicker = () => {
                 endAdornment: (
                   <InputAdornment position="end">
                     {startDate && (
-                      <IconButton onClick={() => setStartDate(null)} size="small">
+                      <IconButton onClick={() => dispatch(setStartDate(null))} size="small">
                         <img src={CloseIcon} alt="Clear" style={{ width: 12, height: 12 }} />
                       </IconButton>
                     )}
@@ -90,7 +103,9 @@ export const CustomDateRangePicker = () => {
         <DatePicker
           value={endDate}
           onChange={(newValue) => {
-            setEndDate(newValue);
+            // setEndDate(newValue);
+            // setOpenEnd(false);
+            dispatch(setEndDate(newValue ? newValue.toISOString() : null));
             setOpenEnd(false);
           }}
           format="DD.MM.YYYY"
@@ -107,7 +122,7 @@ export const CustomDateRangePicker = () => {
                 endAdornment: (
                   <InputAdornment position="end">
                     {endDate && (
-                      <IconButton onClick={() => setEndDate(null)} size="small">
+                      <IconButton onClick={() => dispatch(setEndDate(null))} size="small">
                         <img src={CloseIcon} alt="Clear" style={{ width: 12, height: 12 }} />
                       </IconButton>
                     )}
